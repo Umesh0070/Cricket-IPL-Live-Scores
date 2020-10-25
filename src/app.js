@@ -14,6 +14,6 @@ cric.get('',(req,res) => {
     res.render('index')
 })
 
-cric.listen(port,() => {
-    console.log("Server is up on " + port)
+cric.listen(myPort,() => {
+    console.log("Server is up on " + myPort)
 })
