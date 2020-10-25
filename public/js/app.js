@@ -1,5 +1,5 @@
 console.log('Client side javascript file is loaded!')
-const unique_id = '1216498'
+const unique_id = '1216544'
 const url = 'https://cricapi.com/api/cricketScore?apikey=0AJFDtoMeaWUVHi4LZTsRingmcM2&unique_id='+ unique_id 
 const stats = document.querySelector('#stats')
 const description = document.querySelector('#description')
@@ -21,7 +21,7 @@ var timer = setInterval(() => {
                 console.log(data.error)
             }else {
                 stats.textContent = data.stat
-                description.textContent = data.description
+                // description.textContent = data.description
                 score.textContent = data.score
                 // let team1 = data["team-1"]
                 // let team2 = data["team-2"]
