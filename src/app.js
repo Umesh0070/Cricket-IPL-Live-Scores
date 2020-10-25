@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-
+const myPort = process.env.PORT || 3000
 const cric = express()
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../views')
@@ -14,6 +14,6 @@ cric.get('',(req,res) => {
     res.render('index')
 })
 
-cric.listen(3000,() => {
-    console.log("Server is up on 3000 !")
+cric.listen(port,() => {
+    console.log("Server is up on " + port)
 })
