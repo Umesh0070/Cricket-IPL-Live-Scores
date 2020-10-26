@@ -33,7 +33,6 @@ var timer = setInterval(() => {
         console.log(data.error);
       } else if (data.matchStarted) {
         status.textContent = "Live Matches";
-        status.className += "blink";
         stats.textContent = data.stat;
         // description.textContent = data.description
         team1.textContent = data["team-1"] + ":";
