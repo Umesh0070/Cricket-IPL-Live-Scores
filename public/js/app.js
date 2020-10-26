@@ -79,6 +79,7 @@ var timer = setInterval(() => {
         }
       }
       if (data.stat.includes("won")) {
+        status.textContent = "Recent Matches";
         clearInterval(timer);
       }
       // else {
