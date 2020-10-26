@@ -4,6 +4,20 @@ h1 {
 .font-xlg {
   font-size: x-large;
 }
+.font-spacing{
+  font-size: x-large;
+  margin-left: 1%;
+}
+.blink {
+  color:green;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid blue; /* The typwriter cursor */
