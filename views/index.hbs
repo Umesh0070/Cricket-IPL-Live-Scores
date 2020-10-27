@@ -36,22 +36,29 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <img class="img-responsive" src="assets/images/running-man.png" alt="">
+                        <p class="typewriter" style="width: fit-content;margin-bottom:5%">Site Work in Progress !</p>
                     </div>
-                    <div class="col-lg-6 header__content">
-                        <p class="typewriter" style="width: fit-content;margin-bottom:5%">Work in Progress !</p>
 
-                        <div class="card bg-light mb-3" style="max-width: 35rem;">
+                    <div class="col-lg-6 header__content">
+                        <p class="blink" id="updated" style="margin-bottom:10%"></p>
+
+                        <div class="card bg-default mb-3" style="max-width: 35rem;">
                             <div class="card-header">
-                                <h4 id="status"></h4>
+                                <strong class="font-xlg" id="status"></strong>
+                                <span><img class="img-responsive" style="margin-left: 2%;" id="team1-logo"
+                                        alt=""><strong style="margin-left: 2%;">Vs</strong>
+                                    <img style="margin-left: 2%;" class="img-responsive" id="team2-logo" alt=""></span>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title" id="description"></h5>
                                 {{!-- <span><h3 class="card-text" id="team1" ></h3> --}}
 
-                                <strong class="card-text font-xlg" id="team1"></strong><strong class="font-spacing" id="team1-runs"></strong><strong
-                                    id="team1-wik"  class="font-xlg"></strong>
-                                <div> <strong class="card-text font-xlg" id="team2"></strong><strong  class="font-spacing"
-                                        id="team2-runs"></strong><strong  class="font-xlg" id="team2-wik"></strong></div>
+                                <strong class="card-text font-xlg" id="team1"></strong><strong class="font-spacing"
+                                    id="team1-runs"></strong><strong id="team1-wik" class="font-xlg"></strong>
+
+                                <div> <strong class="card-text font-xlg" id="team2"></strong><strong
+                                        class="font-spacing" id="team2-runs"></strong><strong class="font-xlg"
+                                        id="team2-wik"></strong></div>
                                 {{!-- <h3  id="team1-runs" ></h3></span> --}}
                                 {{!-- <h3>{{this.data}}</h3> --}}
                             </div>

@@ -9,8 +9,8 @@ h1 {
   margin-left: 1%;
 }
 .blink {
-  color:green;
-  animation: blinker 1s linear infinite;
+  color:grey;
+  animation: blinker 5s linear infinite;
 }
 
 @keyframes blinker {
@@ -32,7 +32,7 @@ h1 {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 40% }
+    to { width: 50% }
   }
   
   /* The typewriter cursor effect */
