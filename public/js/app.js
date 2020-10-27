@@ -93,8 +93,8 @@ var timer = setInterval(() => {
             let allMatches = data["matches"];
             let reqMatch = allMatches.find((x) => x.unique_id === parseInt(uniqueId));
             date = new Date(reqMatch.dateTimeGMT);
-            stats.textContent =
-              "Match starts at " + date.getHours() + ":" + date.getMinutes() + " IST Stay Tuned for Live Scores !";
+            // stats.textContent =
+            //   "Match starts at " + date.getHours() + ":" + date.getMinutes() + " IST Stay Tuned for Live Scores !";
             // console.log(date.getFullYear()+'-' + (date.getMonth()+1) + '-'+date.getDate() + '-'+date.getHours()+":"+30)
           });
         });
