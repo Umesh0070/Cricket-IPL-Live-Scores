@@ -63,8 +63,8 @@ var timer = setInterval(() => {
         if (onlyScore[3]) {
           team2Wick.textContent = "/" + onlyScore[3];
         }
-        if (!onlyScore[2] || !onlyScore[3]){
-            team2Runs.textContent == "Yet to Bat"
+        if (!onlyScore[2]){
+            team2Runs.textContent = "Yet to Bat"
         }
 
         if (previous && current && previous !== current) {
