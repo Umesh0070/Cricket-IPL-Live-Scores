@@ -1,5 +1,6 @@
 console.log("Client side javascript file is loaded!");
-var uniqueId = "1216524";
+var uniqueId = "1216499";
+// 1216499
 const url =
   "https://cricapi.com/api/cricketScore?apikey=0AJFDtoMeaWUVHi4LZTsRingmcM2&unique_id=" +
   uniqueId;
@@ -65,8 +66,11 @@ var timer = setInterval(() => {
         }else {
             team2Wick.textContent = "/0";
         }
-        if (!onlyScore[2]){
+        if (!onlyScore[2]  ){
             team2Runs.textContent = "Yet to Bat"
+        }else if (onlyScore[2] == null || onlyScore[2] == ""){
+            team2Runs.textContent = "Refreshing..."
+            console.log(previous)
         }
 
         if (previous && current && previous !== current) {
