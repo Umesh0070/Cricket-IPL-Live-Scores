@@ -9,8 +9,8 @@ h1 {
   margin-left: 1%;
 }
 .blink {
-  color:grey;
-  animation: blinker 5s linear infinite;
+  color:rgb(15, 100, 60);
+  animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
