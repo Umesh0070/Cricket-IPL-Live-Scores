@@ -1,5 +1,5 @@
 console.log("Client side javascript file is loaded!");
-var uniqueId = "1216499";
+var uniqueId = "1216537";
 // 1216499
 const url =
   "https://cricapi.com/api/cricketScore?apikey=0AJFDtoMeaWUVHi4LZTsRingmcM2&unique_id=" +
@@ -105,6 +105,7 @@ var timer = setInterval(() => {
           });
         });
         if (data.stat.includes("chose")) {
+          stats.textContent = ""
           stats.textContent = data.stat;
         }
       }
