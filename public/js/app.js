@@ -63,8 +63,10 @@ var timer = setInterval(() => {
         }
         if (onlyScore[3]) {
           team2Wick.textContent = "/" + onlyScore[3];
+        }else if(onlyScore[3] == null){
+            team2Wick.textContent = "";
         }else {
-            team2Wick.textContent = "/0";
+          team2Wick.textContent = "/0";
         }
         if (!onlyScore[2]  ){
             team2Runs.textContent = "Yet to Bat"
